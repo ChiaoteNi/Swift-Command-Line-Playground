@@ -26,3 +26,8 @@ setenv("YO", "yo123", 1)
 if let rawValue = getenv("YO") {
     print("💥getENVYO =", String(utf8String: rawValue) ?? "nil")
 }
+
+// 4. How to get current position:
+let currentPath = Process().currentDirectoryPath
+print("💥You're now at ", currentPath)
+
